@@ -1,9 +1,7 @@
 class ImagesController < ApplicationController
 
 	def index #displays all items
-		@images = Image.find_by category: "Walter"
+		@index = Images.where(category: "Walter")
 	end
-	
-
 
 end

@@ -24,4 +24,11 @@ ActiveRecord::Schema.define(version: 20150526193107) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "stories", force: :cascade do |t|
+    t.string   "character"
+    t.string   "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end
