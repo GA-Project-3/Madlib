@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Madlib</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div id ="logo">
+	<%= link_to root_path do %>
+	<%= image_tag "BreakingMidas.png" %>
+	<% end %>
+</div>
+
+
+
+<%= yield %>
+
+</body>
+</html>
