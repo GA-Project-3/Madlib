@@ -9,43 +9,15 @@
 <h3>Welcome to Madlibs</h3>
 <p>Select anyone of the images below</p>
 
-<h>King Midas</h3>
-<table class="thumbnail">
-  <tr>
-    <th><%= link_to image_tag('midas_1.jpg', :width => 100)%></th>
-    <th><%= link_to image_tag('midas_2.jpg', :width => 100)%></th>
-    <th><%= link_to image_tag('midas_3.jpg', :width => 100)%></th>
-  </tr>
-</table>
 
-<h3>The Daughter</h3>
-<table class="thumbnail">
-  <tr>
-    <th><%= link_to image_tag('thumb.jpg')%></th>
-    <th><%= link_to image_tag('thumb.jpg')%></th>
-    <th><%= link_to image_tag('thumb.jpg')%></th>
-  </tr>
-</table>
+<h3>King Midas</h3>
+<section class="midas_thumbs">
+  <% @images.each do |image| %>
+    <h2><%='#{image.category}'%></h2><img src="<%=image.url %>"></a>
+  <% end %>
+</section>
 
-<h3>Gold</h3>
-<table class="thumbnail">
-  <tr>
-    <th><%= link_to image_tag('thumb.jpg')%></th>
-    <th><%= link_to image_tag('thumb.jpg')%></th>
-    <th><%= link_to image_tag('thumb.jpg')%></th>
-  </tr>
-</table>
 
-<h3>Fairy</h3>
-<table class="thumbnail">
-  <tr>
-    <th><%= link_to image_tag('thumb.jpg')%></th>
-    <th><%= link_to image_tag('thumb.jpg')%></th>
-    <th><%= link_to image_tag('thumb.jpg')%></th>
-  </tr>
-</table>
-
-<button>Create story</button>
 
 </body>
 </html>

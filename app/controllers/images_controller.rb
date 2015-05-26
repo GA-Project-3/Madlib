@@ -1,15 +1,9 @@
 class ImagesController < ApplicationController
-	
-	layout false
 
 	def index #displays all items
-		@image = Image.all
+		@images = Image.find_by category: "Walter"
 	end
+	
 
-	def new #new creates the form
-		@image = Image.all
-	end
 
-	def create #create processes the form
-	end
 end
