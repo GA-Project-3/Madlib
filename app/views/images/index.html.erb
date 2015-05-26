@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="images.css" rel="stylesheet" type="text/css">
+  
 </head>
 <body>
-
 
 <h3>Welcome to Madlibs</h3>
 <p>Select anyone of the images below</p>
 
 
-<h3>King Midas</h3>
 <section class="midas_thumbs">
+<h3>King Midas</h3>
   <% @walter.each do |image| %>
+    <img src="<%=image.url %>">
   <% end %>
-
-<h3>Little Daughter</h3>
-  <% @baby.each do |image| %>
-    <img src="<%=image.url %>"></a>
-  <% end %>
-
-<h3>Gold</h3>
-  <% @blue_sky.each do |image| %>
-    <img src="<%=image.url %>"></a>
-  <% end %>
-
-<h3>Fairy</h3>
-  <% @gus.each do |image| %>
-    <img src="<%=image.url %>"></a>
-  <% end %>
-
 </section>
 
+<section class="daughter_thumbs">
+<h3>Little Daughter</h3>
+  <% @baby.each do |image| %>
+    <img src="<%=image.url %>">
+  <% end %>
+</section>
 
+<section class="gold_thumbs">
+<h3>Gold</h3>
+  <% @blue_sky.each do |image| %>
+    <img src="<%=image.url %>">
+  <% end %>
+</section>
+
+<select class="fairy_thumbs">
+<h3>Fairy</h3>
+  <% @gus.each do |image| %>
+    <img src="<%=image.url %>">
+  <% end %>
+</select>
 
 </body>
 </html>
