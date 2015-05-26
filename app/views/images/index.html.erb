@@ -12,9 +12,22 @@
 
 <h3>King Midas</h3>
 <section class="midas_thumbs">
-  <% @images.each do |image| %>
-    <h2><%='#{image.category}'%></h2><img src="<%=image.url %>"></a>
+  <% @walter.each do |image| %>
+   <img src="<%=image.url %>"></a>
   <% end %>
+<h3>Little Daughter</h3>
+  <% @baby.each do |image| %>
+    <img src="<%=image.url %>"></a>
+  <% end %>
+<h3>Gold</h3>
+  <% @blue_sky.each do |image| %>
+    <img src="<%=image.url %>"></a>
+  <% end %>
+<h3>Fairy</h3>
+  <% @gus.each do |image| %>
+    <img src="<%=image.url %>"></a>
+  <% end %>
+
 </section>
 
 
