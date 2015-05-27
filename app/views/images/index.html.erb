@@ -6,22 +6,22 @@
 <body>
 
 <h3>Welcome to Madlibs</h3>
-<p>Select anyone of the images below</p>
+  <p>Select anyone of the images below</p>
 
+  <form method="GET" action="new">
+    <section class="midas_thumbs">
+    <h3>King Midas</h3>
+      <% @walter.each do |image| %>
+        <img src="<%=image.url %>">
+      <% end %>
+    </section>
 
-<section class="midas_thumbs">
-<h3>King Midas</h3>
-  <% @walter.each do |image| %>
-    <img src="<%=image.url %>">
-  <% end %>
-</section>
-
-<section class="daughter_thumbs">
-<h3>Little Daughter</h3>
-  <% @baby.each do |image| %>
-    <img src="<%=image.url %>">
-  <% end %>
-</section>
+  <section class="daughter_thumbs">
+    <h3>Little Daughter</h3>
+      <% @baby.each do |image| %>
+        <img src="<%=image.url %>">
+      <% end %>
+  </section>
 
 <section class="gold_thumbs">
 <h3>Gold</h3>
