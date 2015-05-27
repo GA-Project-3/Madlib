@@ -10,7 +10,10 @@ class ImagesController < ApplicationController
 
   def newstory
 
-    @input = Image.where(id: params[:midasGroup])
+    @midas = Image.where(id: params[:midasGroup])
+    @daughter = Image.where(id: params[:daughter])
+    @gold = Image.where(id: params[:gold])
+    @fairy = Image.where(id: params[:fairy])
 
   end
 
