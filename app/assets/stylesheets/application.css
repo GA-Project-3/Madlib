@@ -13,18 +13,6 @@
  *= require_tree .
  *= require_self
  */
-.midas_thumbs img {
-  width: 200px;
-}
-
-.daughter_thumbs img {
-  width: 200px;
-}
-
-.gold_thumbs img {
-  width: 200px;
-}
-
-.fairy_thumbs img {
+.thumbs img {
   width: 200px;
 }

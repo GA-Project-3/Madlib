@@ -9,7 +9,9 @@ class ImagesController < ApplicationController
 	end
 
   def newstory
-    
+
+    @input = Image.where(id: params[:midasGroup])
+
   end
 
 end
