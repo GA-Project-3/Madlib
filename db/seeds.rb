@@ -18,13 +18,13 @@ midas1 = Image.create({
 midas2 = Image.create({
 	name: "Midas2",
 	category: "Walter",
-	url: "http://www.gq.com/blogs/the-feed/2013/08/08/walter-white-money.jpg"
+	url: "http://payload82.cargocollective.com/1/4/144754/3943050/All%20Hail%20the%20King%20Sam%20Ailey%20Deck%20Breaking%20Bad_1.jpg"
 })
 
 midas3 = Image.create({
 	name: "Midas3",
 	category: "Walter",
-	url: "http://d.ibtimes.co.uk/en/full/1410230/walter-white-jesse-pinkman-make-crystal-meth-tv-show-breaking-bad-days-may-be-numbered.jpg"
+	url: "http://media.meltybuzz.fr/article-1786737-ajust_930/le-grand-heisenberg.jpg"
 })
 
 

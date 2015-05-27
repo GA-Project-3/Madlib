@@ -8,4 +8,8 @@ class ImagesController < ApplicationController
     @gus = Image.where(:category => 'Gus')
 	end
 
+  def newstory
+    
+  end
+
 end

@@ -4,38 +4,50 @@
   
 </head>
 <body>
+  <%= link_to root_path do %>
+    <%= image_tag "BreakingMidas.png" %>
+    <% end %>
 
 <h3>Welcome to Madlibs</h3>
   <p>Select anyone of the images below</p>
 
-  <form method="GET" action="new">
+  <form method="POST" action="/newstory">
+    
     <section class="midas_thumbs">
-    <h3>King Midas</h3>
-      <% @walter.each do |image| %>
-        <img src="<%=image.url %>">
-      <% end %>
+      <h3>King Midas</h3>
+        <% @walter.each do |image| %>
+          <input type="radio" name="midasGroup" value="<%= image.id %>">
+          <img src="<%= image.url %>">
+        <% end %>
     </section>
 
-  <section class="daughter_thumbs">
-    <h3>Little Daughter</h3>
-      <% @baby.each do |image| %>
-        <img src="<%=image.url %>">
-      <% end %>
-  </section>
+    <section class="daughter_thumbs">
+      <h3>Little Daughter</h3>
+        <% @baby.each do |image| %>
+          <input type="radio" name="daughter" value="<%= image.id %>">
+          <img src="<%= image.url %>">
+        <% end %>
+    </section>
 
-<section class="gold_thumbs">
-<h3>Gold</h3>
-  <% @blue_sky.each do |image| %>
-    <img src="<%=image.url %>">
-  <% end %>
-</section>
+    <section class="gold_thumbs">
+      <h3>Gold</h3>
+        <% @blue_sky.each do |image| %>
+          <input type="radio" name="gold" value="<%= image.id %>">
+          <img src="<%= image.url %>">
+        <% end %>
+    </section>
 
-<select class="fairy_thumbs">
-<h3>Fairy</h3>
-  <% @gus.each do |image| %>
-    <img src="<%=image.url %>">
-  <% end %>
-</select>
+    <section class="fairy_thumbs">
+      <h3>Fairy</h3>
+        <% @gus.each do |image| %>
+          <input type="radio" name="fairy" value="<%= image.id %>">
+          <img src="<%=image.url %>">
+        <% end %>
+    </section>
+
+    <button type="submit">TELL STORY</button>
+  
+  </form>
 
 </body>
 </html>
