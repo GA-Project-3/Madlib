@@ -16,3 +16,11 @@
 .thumbs img {
   width: 200px;
 }
+
+#container {
+  float: left;
+}
+
+p {
+  float: right;
+}

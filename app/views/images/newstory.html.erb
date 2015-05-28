@@ -1,10 +1,43 @@
-<h1>Creating</h1>
-<h1>King Midas and his touch</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  
+</head>
+<body>
+<h1>The Midas Touch</h1>
 
-<p>
-King Midas <span class="thumbs"><img src='<%= @midas[0].url %>'></span> was a crystal king who had the talent to create blue sky crystals which would make him lots of gold. It was said that he had the ultimate crystal, but he could only make a limited amount of it. He loved his little daughter <span class="thumbs"><img src='<%= @daughter[0].url %>'></span> and it was she that inspired him to create the best blue sky so he may provide for his family. A fairy<span class="thumbs"><img src='<%= @fairy[0].url %>'></span> came and told the King he can grant him the ability to distribute larger quantities of blue sky everywhere to every corner which could leave the King's family all the gold <span class="thumbs"><img src='<%= @gold[0].url %>'></span> in the world. 
+<div id="container">
+<span class="thumbs"><img src='<%= @midas[0].url %>'></span>
+  <p> King Midas was a crystal king who had the talent to create blue sky crystals which would make him lots of gold. It was said that he had the ultimate crystal, but he could only make a limited amount of it. 
+  </p>
+</div>
 
-King Midas agreed and the fairy granted him world distribution. The King wanted everyone to know that only blue crystal had the Midas Touch and no other crystal surpassed the quality. The more blue crystal, the more gold. The King was so consumed with fame, success and riches he forgot about the importance of love and respect from his little girl and family. He put gold above all else and his family lost everyone they loved. In the end all they had was gold.
-</p>
+<div id="container">
+<span class="thumbs"><img src='<%= @daughter[0].url %>'></span> 
+  <p> He loved his little daughter and it was she that inspired him to create the best blue sky so he may provide for his family. 
+  </p>
+</div>
 
-<%= link_to("Home", {:action => 'index'}, :class => 'action index') %>
+<div id="container">
+<span class="thumbs"><img src='<%= @fairy[0].url %>'></span>
+  <p> A fairy came and told the King he can grant him the ability to distribute larger quantities of blue sky everywhere to every corner which could leave the King's family
+  </p>
+</div>
+
+<div id="container">
+<span class="thumbs"><img src='<%= @gold[0].url %>'></span>
+  <p>all the gold in the world.
+  </p>
+</div>
+
+<div> 
+  <p>
+    King Midas agreed and the fairy granted him world distribution. The King wanted everyone to know that only blue crystal had the Midas Touch and no other crystal surpassed the quality. The more blue crystal, the more gold. The King was so consumed with fame, success and riches he forgot about the importance of love and respect from his little girl and family. He put gold above all else and his family lost everyone they loved. In the end all they had was gold.
+  </p>
+</div>
+
+<div id="container">
+<%= link_to("pick new photos", {:action => 'index'}, :class => 'action index') %>
+</div>
+</body>
+</html>
