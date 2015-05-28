@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   post "newstory" => "images#newstory"
 
+  get "add" => "images#add"
+
   # You can have the root of your site routed with "root"
   root 'images#index'
 
