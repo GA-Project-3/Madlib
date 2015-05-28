@@ -14,13 +14,33 @@
  *= require_self
  */
 .thumbs img {
-  width: 200px;
+  width: 250px;
+  height: 200px;
+
 }
 
-#container {
-  float: left;
+#index {
+  color: white;
+  text-align: center;
+  background-image: url("clouds.jpg");
+  background-attachment: fixed;
+  padding: 50px;
 }
+
+button {
+  color: black;
+  margin: 20px;
+  padding: 10px;
+}
+
+#story {
+  color: white;
+  text-align: left;
+  background-image: url("leftsmoke.jpg");
+  padding: 20px; 
+}
+
 
 p {
-  float: right;
+
 }

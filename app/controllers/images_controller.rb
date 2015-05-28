@@ -10,11 +10,19 @@ class ImagesController < ApplicationController
 
   def newstory
 
-    @midas = Image.where(id: params[:midasGroup])
-    @daughter = Image.where(id: params[:daughter])
-    @gold = Image.where(id: params[:gold])
-    @fairy = Image.where(id: params[:fairy])
+    if params.length < 6 
+      
+      #render :error
+      alert = ("This shit works")
 
+    else
+      @midas = Image.where(id: params[:midasGroup])
+      @daughter = Image.where(id: params[:daughter])
+      @gold = Image.where(id: params[:gold])
+      @fairy = Image.where(id: params[:fairy])
+    end
+  
   end
 
 end
+

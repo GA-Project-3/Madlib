@@ -4,12 +4,13 @@
   
 </head>
 <body>
-  <%= link_to root_path do %>
-    <%= image_tag "BreakingMidas.png" %>
-    <% end %>
+
+<div id="index">
+  
+<%= image_tag "BreakingMidas.png" %>
 
 <h1>BadLibs</h1>
-  <h2>pick photos</h2>
+  <h2>Pick a Photo From Each Category</h2>
 
   <form method="POST" action="/newstory">
     
@@ -45,9 +46,14 @@
         <% end %>
     </section>
     
+    <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>"><%= value %></div>
+      <% end %>
+    
     <button type="submit">TELL STORY</button>
    
   </form>
+</div>
 
 </body>
 </html>
