@@ -12,8 +12,7 @@ class ImagesController < ApplicationController
 
     if params.length < 6 
       
-      #render :error
-      alert = ("This shit works")
+      render :error
 
     else
       @midas = Image.where(id: params[:midasGroup])
