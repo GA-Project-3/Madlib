@@ -26,6 +26,7 @@
   background-image: url("clouds.jpg");
   background-attachment: fixed;
   padding: 50px;
+  text-shadow: 2px 2px 2px black;
 }
 
 button {
@@ -38,7 +39,9 @@ button {
   color: white;
   text-align: left;
   background-image: url("leftsmoke.jpg");
-  padding: 20px; 
+  padding: 20px;
+  text-shadow: 2px 2px 2px black;
+  font-size: 30px; 
 }
 
 .container {
