@@ -20,6 +20,11 @@
           <input type="radio" name="midasGroup" value="<%= image.id %>">
           <img src="<%= image.url %>">
         <% end %>
+    
+    <form method="DELETE" action="/destroy">
+      <button type="submit"> DELETE PIC </button>
+    </form>
+
     </section>
 
     <section class="thumbs">

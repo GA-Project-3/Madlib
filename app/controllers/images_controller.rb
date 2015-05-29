@@ -24,7 +24,13 @@ class ImagesController < ApplicationController
   end
 
   def create
-    binding.pry
+    Image.create({category: params[:category], url: params[:url]})
+  
+    redirect_to "/images"
+  end
+
+  def destroy
+    Image.destroy({category: params[:category], url: params[:url]})
   end
 
 end
