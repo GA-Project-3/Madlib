@@ -23,7 +23,7 @@ A classic madlibs game where users choose words to inject into a story with a tw
 - After selecting all the pictures, users click the `TELL STORY` button.
 
 - Users are then presented a story page with their chosen pictures injected into the story.
-  
+
 
 ### <center> Experience Rundown
 ---
@@ -36,7 +36,7 @@ Users will arrive at the homepage of app.
 /index
 ```
 
-<center><img src="/assets/homepage_MOCKUP.png" width='350'>
+<center><img src="/homepage_MOCKUP.png" width='350'>
 
 From the homepage users will select a picture from each of the rows each will be categorized. After every row has a selected picture the user will click the `TELL STORY` button.
 
@@ -48,7 +48,7 @@ From the homepage users will select a picture from each of the rows each will be
 
 The user is presented their story with the chosen pictures populating their appropiate locations.
 
-<center><img src="/assets/story_MOCKUP.png" width='350'>
+<center><img src="/story_MOCKUP.png" width='350'>
 
 The user can then click the `BACK` button to return to the homepage and select different pictures.  Maybe even change the story?  Happy Madlib-ing!!!
 
@@ -58,7 +58,7 @@ The user can then click the `BACK` button to return to the homepage and select d
 /index
 ```
 
-<center><img src="/assets/homepage_MOCKUP.png" width='350'>
+<center><img src="/homepage_MOCKUP.png" width='350'>
 
 ```
 /add?
@@ -95,4 +95,3 @@ images TABLE
 | 10 | Fairy1 | Gus| link |
 | 11 | Fairy2 | Gus| link |
 | 12 | Fairy3 | Gus| link |
-
