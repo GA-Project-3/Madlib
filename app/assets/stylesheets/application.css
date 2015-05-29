@@ -41,9 +41,12 @@ button {
   padding: 20px; 
 }
 
+.container {
+  position: relative;
+}
 
 p {
-
+  float: left;
 }
 
 #add {

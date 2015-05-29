@@ -24,13 +24,13 @@ class ImagesController < ApplicationController
   end
 
   def create
-    Image.create({category: params[:category], url: params[:url]})
+    @addPic = Image.create({category: params[:category], url: params[:url]})
   
-    redirect_to "/images"
+    redirect_to "/"
   end
 
   def destroy
-    Image.destroy({category: params[:category], url: params[:url]})
+    @destroyPic = Image.destroy({category: params[:category], url: params[:url]})
   end
 
 end
