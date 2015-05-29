@@ -23,8 +23,7 @@ A classic madlibs game where users choose words to inject into a story with a tw
 - After selecting all the pictures, users click the `TELL STORY` button.
 
 - Users are then presented a story page with their chosen pictures injected into the story.
-
-- Comedy ensues.  
+  
 
 ### <center> Experience Rundown
 ---
@@ -60,3 +59,40 @@ The user can then click the `BACK` button to return to the homepage and select d
 ```
 
 <center><img src="/assets/homepage_MOCKUP.png" width='350'>
+
+```
+/add?
+```
+#Add more photos to Madlibs
+
+| Walter White  | enter url | save button |
+| ---------------- | --------- |-------------|
+| Baby Holly White | enter url | save button |
+| Blue Meth| enter url | save button |
+| Gus Fringe| enter url | save button |
+
+```
+images TABLE
+```
+
+| id  | PRIMARY KEY |
+| ------- | --------- |
+| name | STRING |
+| category| STRING |
+| url| STRING |
+
+| id | name | category | url |
+| -- | --------- |---------| ---- |
+| 01 | Midas1 | Walter| link |
+| 02 | Midas2 | Walter| link |
+| 03 | Midas3 | Walter| link |
+| 04 | Daughter1 | Baby| link |
+| 05 | Daughter2 | Baby| link |
+| 06 | Daughter3 | Baby| link |
+| 07 | Meth1 | Blue-sky| link |
+| 08 | Meth2 | Blue-sky| link |
+| 09 | Meth3 | Blue-sky| link |
+| 10 | Fairy1 | Gus| link |
+| 11 | Fairy2 | Gus| link |
+| 12 | Fairy3 | Gus| link |
+

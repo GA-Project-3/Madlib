@@ -50,9 +50,20 @@ p {
 }
 
 #add {
+  color: white;
   text-align: center;
+  background-image: url("leftsmoke.jpg");
+  padding: 20px;
 }
 
 #addMore {
+  color: white;
   text-align: center;
+  background-image: url("green smoke.jpg");
+  padding: 20px;
+}
+
+#error {
+  text-align: center;
+
 }
